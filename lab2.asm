@@ -25,6 +25,7 @@ Start:
 	mov ah, [offset rect_word]        ;завантаження 1-го байту rect_word у першу частину регістру ax
 	mov al, [offset rect_word + 1]    ;завантаження 2-го байту rect_word у другу частину регістру ax
 	
+	mov cx, 10                         ;cx = 10
 	loop1:                             ;мітка
 		mov dx, cx                     ;dx = cx
 		mov cx, 20                     ;cx = 20
